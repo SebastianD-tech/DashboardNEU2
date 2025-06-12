@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNS Live-Dashboard</title>
+    <style>
+        /* Einfaches Styling für bessere Lesbarkeit */
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f4f4f9; color: #333; padding: 20px; line-height: 1.6; }
+        .card { background-color: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px; margin-bottom: 20px; max-width: 400px; }
+        h1, h2 { color: #0056b3; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px; }
+        .sensor-data { font-size: 1.2em; margin: 10px 0; display: flex; justify-content: space-between; }
+        .sensor-data .label { font-weight: normal; color: #555; }
+        .sensor-data .value { font-weight: bold; color: #d9534f; padding: 2px 8px; background-color: #f9f9f9; border-radius: 4px; }
+        .footer { font-size: 0.8em; text-align: center; color: #888; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <h1>Unified Namespace - Live Daten</h1>
+
+    <div class="card">
+        <h2>Fräsmaschine 01</h2>
+        <div class="sensor-data">
+            <span class="label">Temperatur:</span> 
+            <span class="value" id="temp-value">Warte auf Daten...</span>
+        </div>
+        <div class="sensor-data">
+            <span class="label">Druck:</span>
+            <span class="value" id="pressure-value">Warte auf Daten...</span>
+        </div>
+        <div class="sensor-data">
+            <span class="label">Vibration:</span>
+            <span class="value" id="vibration-value">Warte auf Daten...</span>
+        </div>
+        <div class="sensor-data">
+            <span class="label">Status:</span>
+            <span class="value" id="status-value">Warte auf Daten...</span>
+        </div>
+        <div class="sensor-data">
+            <span class="label">Teilezähler:</span>
+            <span class="value" id="counter-value">Warte auf Daten...</span>
+        </div>
+    </div>
+
+    <div class="footer">Dashboard aktualisiert sich automatisch.</div>
+
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
