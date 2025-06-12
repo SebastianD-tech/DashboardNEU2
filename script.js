@@ -4,11 +4,11 @@ console.log("Dashboard-Skript geladen. Versuche, Verbindung aufzubauen...");
 // WICHTIG: Ersetzen Sie die Platzhalter in diesem Block mit Ihren echten Daten!
 // ==============================================================================
 const options = {
-  host: 'e511a0ad851e4fdaafd32f113a294998.s1.eu.hivemq.cloud',
+  host: 'af8cf52f9c6c4086bc2bb48853986974.s1.eu.hivemq.cloud',
   port: 8884,                                 
   protocol: 'wss',                            
-  username: 'Dashboard',      
-  password: 'Dashi76!33'    
+  username: 'dashboard-consumer',      
+  password: 'DashboardTest5678'    
 };
 // ==============================================================================
 
