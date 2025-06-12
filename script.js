@@ -7,8 +7,8 @@ const options = {
   host: 'af8cf52f9c6c4086bc2bb48853986974.s1.eu.hivemq.cloud',
   port: 8884,                                 
   protocol: 'wss',                            
-  username: 'dashboard-consumer',      
-  password: 'DashboardTest5678'    
+  username: "dashboard-consumer",      
+  password: "DashboardTest5678"    
 };
 // ==============================================================================
 
